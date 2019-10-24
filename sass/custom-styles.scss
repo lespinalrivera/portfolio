@@ -1,0 +1,27 @@
+.full-height {
+  min-height: 100vh;
+}
+
+.pt-6,
+.py-6 {
+  padding-top: 4rem !important;
+}
+
+.pb-6,
+.py-6 {
+  padding-bottom: 4rem !important;
+}
+
+.card {
+  border-radius: 8px;
+}
+
+.custom-card {
+  flex: 33.333333% 0 0;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.card-image-top {
+  border-radius: 8px 8px 0 0;
+}

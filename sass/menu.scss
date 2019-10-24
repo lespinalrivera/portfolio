@@ -1,0 +1,65 @@
+#menu {
+  position: fixed;
+
+  top: 140px;
+  right: 0;
+}
+
+.wheel {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  top: -80px;
+  right: -80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e1e1e;
+  color: rgb(228, 227, 227);
+  box-shadow: -1px 2px 4px #000;
+
+  .dial {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 190px;
+    height: 190px;
+
+    border-radius: 50%;
+
+    background: #302f2f;
+
+    .notch {
+      position: absolute;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      height: 20px;
+      width: 50%;
+      transform-origin: 100% 50%;
+
+      &:nth-child(2) {
+        transform: rotate(270deg);
+      }
+      &:nth-child(3) {
+        transform: rotate(180deg);
+      }
+      &:nth-child(4) {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .lens {
+    z-index: 3000;
+    left: -3px;
+    position: absolute;
+    border: 4px solid rgb(90, 90, 90);
+    border-radius: 3px;
+    width: 100px;
+    height: 30px;
+    box-shadow: 1px 2px 3px #1e1e1e, inset -1px -2px 3px #1e1e1e,
+      inset 1px 2px 3px #1e1e1e;
+  }
+}
